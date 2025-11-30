@@ -61,11 +61,11 @@
             font-weight: 500;
         }
 
-        nav ul li:hover > a {
+        nav ul li:hover>a {
             background: #1e3d78;
         }
 
-        nav ul li > a.drop::after {
+        nav ul li>a.drop::after {
             content: " ▼";
             font-size: 11px;
         }
@@ -116,6 +116,15 @@
             nav ul li ul li a {
                 padding-left: 30px;
             }
+        }
+
+        /* footer styling */
+        .footer-box {
+            display: flex;
+            background-color: #264f9c;
+            color: white;
+            padding: 20px;
+            justify-content: space-around;
         }
     </style>
 </head>
@@ -203,40 +212,71 @@
         </ul>
     </nav>
     <!-- IMAGE SLIDER SECTION -->
-<div class="slider-container">
+    <div class="slider-container">
 
-    <div class="slider">
-        <div class="slide active">
-            <img src="university/engineering.png" alt="Engineering Department">
+        <div class="slider">
+            <div class="slide active">
+                <img src="university/engineering.png" alt="Engineering Department">
+            </div>
+            <div class="slide">
+                <img src="university/Arts Department.png" alt="Arts Department">
+            </div>
+            <div class="slide">
+                <img src="university/Pharmacy Department.png" alt="Pharmacy Department:">
+            </div>
+            <div class="slide">
+                <img src="university/Science Department.png" alt="Science Department">
+            </div>
+            <div class="slide">
+                <img src="university/managment department.png" alt="Management Department">
+            </div>
         </div>
-        <div class="slide">
-            <img src="university/Arts Department.png" alt="Arts Department">
-        </div>
-        <div class="slide">
-            <img src="university/Pharmacy Department.png" alt="Pharmacy Department:">
-        </div>
-        <div class="slide">
-            <img src="university/Science Department.png" alt="Science Department">
-        </div>
-        <div class="slide">
-            <img src="university/managment department.png" alt="Management Department">
+
+        <!-- Arrow Buttons -->
+        <!-- <span class="prev">&#10094;</span>
+    <span class="next">&#10095;</span> -->
+
+        <!-- Dots -->
+        <div class="dots-container">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
         </div>
     </div>
+    <div class="footer-box">
+        <div class="footer-box1">
+            <h2>Footer Navigation</h2>
+            <hr>
+            <nav class="footer_nav">
+                <ul class="nospace">
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                    <li><a href="result.php">Result</a></li>
+                    <li><a href="administrator.php">Administrator</a></li>
+                    <li><a href="college.php">College</a></li>
+                    <li><a href="contactus.php">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-box1">
+            <h2>student corner</h2>
+            <hr>
+            <nav class="footer_nav">
+                <ul class="nospace">
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                    <li><a href="result.php">Result</a></li>
+                    <li><a href="administrator.php">Administrator</a></li>
+                    <li><a href="college.php">College</a></li>
+                    <li><a href="contactus.php">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
 
-    <!-- Arrow Buttons -->
-    <span class="prev">&#10094;</span>
-    <span class="next">&#10095;</span>
-
-    <!-- Dots -->
-    <div class="dots-container">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
     </div>
-</div>
-
 
 </body>
+
 </html>
