@@ -5,128 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr.Prem Kumar University</title>
-
-    <style>
-        /* RESET */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        #header {
-            padding: 10px 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        #hgroup img {
-            width: 280px;
-        }
-
-        #header-contact h1 {
-            margin: 100px;
-            font-weight: bold;
-            color: #264f9c;
-            text-align: right;
-        }
-
-        /* ================= NAVBAR ================= */
-        nav {
-            background: #264f9c;
-            width: 100%;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            align-items: center;
-        }
-
-        nav ul li {
-            position: relative;
-        }
-
-        nav ul li a {
-            padding: 12px 18px;
-            color: white;
-            text-decoration: none;
-            display: block;
-            font-size: 15px;
-            font-weight: 500;
-        }
-
-        nav ul li:hover>a {
-            background: #1e3d78;
-        }
-
-        nav ul li>a.drop::after {
-            content: " ▼";
-            font-size: 11px;
-        }
-
-        /* ============ DEFAULT DROPDOWN CSS ============ */
-        nav ul li ul {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background: #264f9c;
-            width: 220px;
-            display: none;
-            flex-direction: column;
-            border-radius: 0 0 6px 6px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
-            z-index: 999;
-        }
-
-        nav ul li:hover ul {
-            display: flex;
-        }
-
-        nav ul li ul li a {
-            padding: 10px 15px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        nav ul li ul li a:hover {
-            background: #1e3d78;
-        }
-
-        /* ================== MOBILE ================= */
-        @media (max-width: 900px) {
-            nav ul {
-                flex-direction: column;
-            }
-
-            nav ul li {
-                width: 100%;
-            }
-
-            nav ul li ul {
-                width: 100%;
-                position: static;
-                box-shadow: none;
-            }
-
-            nav ul li ul li a {
-                padding-left: 30px;
-            }
-        }
-
-        /* footer styling */
-        .footer-box {
-            display: flex;
-            background-color: #264f9c;
-            color: white;
-            padding: 20px;
-            justify-content: space-around;
-        }
-    </style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -211,6 +90,9 @@
 
         </ul>
     </nav>
+
+    <main>
+        
     <!-- IMAGE SLIDER SECTION -->
     <div class="slider-container">
 
@@ -245,6 +127,8 @@
             <span class="dot"></span>
         </div>
     </div>
+    </main>
+
     <div class="footer-box">
         <div class="footer-box1">
             <h2>Footer Navigation</h2>
@@ -276,6 +160,40 @@
         </div>
 
     </div>
+
+    <script>
+        const slider = document.querySelector('.slider');
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        let currentIndex = 0;
+        const totalSlides = slides.length;
+
+        function updateSlider() {
+            slider.style.transform = `translateX(-${currentIndex * 20}%)`;
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateSlider();
+        }
+
+        // Auto slide every 3 seconds
+        setInterval(nextSlide, 3000);
+
+        // Dot navigation
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentIndex = index;
+                updateSlider();
+            });
+        });
+
+        // Initial update
+        updateSlider();
+    </script>
 
 </body>
 
