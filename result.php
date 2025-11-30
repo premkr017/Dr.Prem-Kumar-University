@@ -41,15 +41,15 @@
             <li>
                 <a href="result.php" class="drop">Result</a>
                 <ul>
-                    <li><a href="ug_result.php">Graduation</a></li>
-                    <li><a href="pg_result.php">Post Graduation</a></li>
-                    <li><a href="ug_result.php">Vocational</a></li>
-                    <li><a href="ug_result.php">Law</a></li>
-                    <li><a href="ug_result.php">BHMS</a></li>
-                    <li><a href="ug_result.php">B.ED</a></li>
-                    <li><a href="ug_result.php">M.ED</a></li>
-                    <li><a href="ug_result.php">PAT</a></li>
-                    <li><a href="ug_result.php">B-PHARMA</a></li>
+                    <li><a href="#ug">Graduation</a></li>
+                    <li><a href="#pg">Post Graduation</a></li>
+                    <li><a href="#voc">Vocational</a></li>
+                    <li><a href="#law">Law</a></li>
+                    <li><a href="#bhms">BHMS</a></li>
+                    <li><a href="#bed">B.ED</a></li>
+                    <li><a href="#med">M.ED</a></li>
+                    <li><a href="#pat">PAT</a></li>
+                    <li><a href="#bpharma">B-PHARMA</a></li>
                 </ul>
             </li>
 
@@ -67,9 +67,9 @@
             <li>
                 <a href="college.php" class="drop">College</a>
                 <ul>
-                    <li><a href="ug_result.php">Graduation</a></li>
-                    <li><a href="pg_result.php">Post Graduation</a></li>
-                    <li><a href="ug_result.php">Vocational</a></li>
+                    <li><a href="#ug">Graduation</a></li>
+                    <li><a href="#pg">Post Graduation</a></li>
+                    <li><a href="#voc">Vocational</a></li>
                 </ul>
             </li>
 
@@ -77,9 +77,9 @@
             <li>
                 <a href="#" class="drop">Course</a>
                 <ul>
-                    <li><a href="ug_result.php">Graduation</a></li>
-                    <li><a href="pg_result.php">Post Graduation</a></li>
-                    <li><a href="ug_result.php">Vocational</a></li>
+                    <li><a href="#ug">Graduation</a></li>
+                    <li><a href="#pg">Post Graduation</a></li>
+                    <li><a href="#voc">Vocational</a></li>
                 </ul>
             </li>
 
@@ -113,6 +113,44 @@
     </div>
     <div class="result_board_Other">
         <h2><b><p>Other Department</p></b></h2>
+    </div>
+
+    <!-- Result Sections -->
+    <div id="ug">
+        <h2>Graduation Results</h2>
+        <!-- Content for UG results -->
+    </div>
+    <div id="pg">
+        <h2>Post Graduation Results</h2>
+        <!-- Content for PG results -->
+    </div>
+    <div id="voc">
+        <h2>Vocational Results</h2>
+        <!-- Content for Vocational results -->
+    </div>
+    <div id="law">
+        <h2>Law Results</h2>
+        <!-- Content for Law results -->
+    </div>
+    <div id="bhms">
+        <h2>BHMS Results</h2>
+        <!-- Content for BHMS results -->
+    </div>
+    <div id="bed">
+        <h2>B.ED Results</h2>
+        <!-- Content for B.ED results -->
+    </div>
+    <div id="med">
+        <h2>M.ED Results</h2>
+        <!-- Content for M.ED results -->
+    </div>
+    <div id="pat">
+        <h2>PAT Results</h2>
+        <!-- Content for PAT results -->
+    </div>
+    <div id="bpharma">
+        <h2>B-PHARMA Results</h2>
+        <!-- Content for B-PHARMA results -->
     </div>
     </main>
 
